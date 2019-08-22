@@ -17,10 +17,13 @@ export class ColorDirective implements OnInit {
             console.log(event.key, this.dynColor)
         } else if (event.key === 'ArrowLeft') {
             this.dynColor = 'blue'
+            console.log(event.key, this.dynColor)
         } else if (event.key === 'ArrowDown') {
             this.dynColor = 'purple'
+            console.log(event.key, this.dynColor)
         } else if (event.key === 'ArrowUp') {
             this.dynColor = 'green'
+            console.log(event.key, this.dynColor)
         }
         this.renderer.setStyle(this.el.nativeElement, 'color', this.dynColor)        
     }    
